@@ -32,7 +32,7 @@ On most systems you could build the library using the following commands,
     mkdir build
     cd build
     cmake ..
-    cmake --build .
+    make install
 
 Use `cmake -DBUILD_TESTS=ON ..` to build the tests in addition and use `ctest --verbose` to run them.
 
