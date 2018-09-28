@@ -17,6 +17,9 @@ FILE(GLOB SRC_H include/squash.h include/squash/*.h)
 FILE(GLOB SRC_SQUASH src/*.c)
 ADD_LIBRARY(squash ${SRC_H} ${SRC_SQUASH})
 
+INSTALL(TARGETS squash ARCHIVE DESTINATION lib)
+INSTALL(DIRECTORY include/ DESTINATION include)
+
 IF(BUILD_TESTS)
   ENABLE_TESTING()
   ADD_TEST(squash_tests squash_tests)
