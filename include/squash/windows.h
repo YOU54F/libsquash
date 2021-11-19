@@ -9,7 +9,7 @@
 #ifndef WINDOWS_H_A80B5674
 #define WINDOWS_H_A80B5674
 
-#include <Windows.h>
+#include <windows.h>
 #include <stdint.h>
 #include <io.h>
 
